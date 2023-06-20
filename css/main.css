@@ -1,0 +1,135 @@
+.wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "aside header"
+    "aside main";
+  grid-template-columns: 252px 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.aside {
+  grid-area: aside;
+  background: #fff;
+  padding: 51px 55px;
+}
+.aside ul {
+  display: grid;
+  gap: 30px;
+}
+.aside li {
+  padding-left: 35px;
+  position: relative;
+}
+.aside li::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  position: absolute;
+}
+.aside .new-in::before {
+  background-image: url("../img/icons/electro.png.png");
+}
+.aside .cloth::before {
+  background-image: url("../img/icons/clothing.png.png");
+}
+.aside .shoes::before {
+  background-image: url("../img/icons/shoes.png.png");
+}
+.aside .acces::before {
+  background-image: url("../img/icons/bag.png.png");
+}
+.aside .activ::before {
+  background-image: url("../img/icons/sport.png.png");
+}
+.aside .gifts::before {
+  background-image: url("../img/icons/gift.png.png");
+}
+.aside .inspir::before {
+  background-image: url("../img/icons/diamond.png.png");
+}
+.aside a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.7099px;
+  line-height: 19px;
+  color: #000000;
+}
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: flex-end;
+}
+.header ul {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 74px;
+  margin-right: 56px;
+  gap: 42px;
+}
+.line {
+  position: absolute;
+  width: 72px;
+  height: 3px;
+  margin-top: 75px;
+  background: #000000;
+}
+.shopping {
+  top: 51px;
+  right: 92px;
+}
+.main {
+  display: grid;
+  padding-bottom: 50px;
+  padding-left: 38px;
+  gap: 21px;
+  grid-template-columns: repeat(4, 260px);
+  grid-template-rows: repeat(4, 180px);
+}
+.sail {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.sammer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.martini {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.e-glasses {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.p-glasses {
+  grid-column-start: 3;
+  grid-row-end: 2;
+}
+.b-glasses {
+  grid-column-start: 4;
+  grid-row-end: 2;
+}
+.blue-glasses {
+  grid-row-start: 3;
+  grid-column-end: 4;
+}
+.orange {
+  grid-row-start: 4;
+  grid-column-end: 4;
+  }
+.main img {
+  max-width: 539px;
+}
+.explore {
+  margin-top: 57px;
+  margin-bottom: 54px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+}
