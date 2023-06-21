@@ -78,6 +78,7 @@
   background: #000000;
 }
 .shopping {
+  position: absolute;
   top: 51px;
   right: 92px;
 }
