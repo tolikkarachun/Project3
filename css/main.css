@@ -4,7 +4,7 @@
   grid-template-areas:
     "aside header"
     "aside main";
-  grid-template-columns: 252px 1fr;
+  grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
 }
 
@@ -37,6 +37,7 @@
 }
 .aside .shoes::before {
   background-image: url("../img/icons/shoes.png.png");
+  background-size: cover;
 }
 .aside .acces::before {
   background-image: url("../img/icons/bag.png.png");
@@ -49,6 +50,7 @@
 }
 .aside .inspir::before {
   background-image: url("../img/icons/diamond.png.png");
+  background-size: cover;
 }
 .aside a {
   font-family: "Montserrat";
@@ -109,6 +111,7 @@
 .p-glasses {
   grid-column-start: 3;
   grid-row-end: 2;
+  border-radius: 20px;
 }
 .b-glasses {
   grid-column-start: 4;
